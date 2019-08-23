@@ -155,7 +155,7 @@ $(function () {
         nav: true,
         slideBy: 1,
         item: 1,
-        navText: ["<i class='flaticon-last-track-left-arrow'> </i>", "<i class='flaticon-right-arrow'> </i>"],
+        navText: ["<i class='flaticon-left-arrow-key'> </i>", "<i class='flaticon-keyboard-right-arrow-button'> </i>"],
         responsiveClass: true,
         responsive: {
             0: {
