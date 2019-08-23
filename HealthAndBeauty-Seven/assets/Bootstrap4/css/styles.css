@@ -1,4 +1,4 @@
-﻿/*================================= 
+﻿/*=================================
         Font-Family's Start
   =================================*/
 
@@ -35,7 +35,7 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/*================================= 
+/*=================================
     Navbar Section Styling
   =================================*/
 
@@ -149,10 +149,10 @@ html, body {
     color: #fafcfe;
 }
 
-.link-style:hover {
-    text-decoration: none;
-    color: #fafcfe;
-}
+    .link-style:hover {
+        text-decoration: none;
+        color: #fafcfe;
+    }
 
 .btn-contact {
     font-size: 17px;
@@ -166,10 +166,10 @@ html, body {
     border: 2px solid #ffffff;
 }
 
-.btn-contact:hover {
-    text-decoration: none;
-    color: #ffffff;
-}
+    .btn-contact:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
 
 .btn-blog {
     font-size: 17px;
@@ -188,15 +188,15 @@ html, body {
     font-family: 'JosefSansMedium';
 }
 
-.btn-blog:hover {
-    text-decoration: none;
-    color: #ffffff;
-}
+    .btn-blog:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
 
-#home .owl-theme .owl-nav.disabled+.owl-dots {
+#home .owl-theme .owl-nav.disabled + .owl-dots {
     position: relative;
-    margin-top: 0px;
-    top: -79px;
+    margin-top: -50px;
+    top: -30px;
 }
 
 #home .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
@@ -215,29 +215,53 @@ html, body {
     position: relative;
 }
 
-#home .owl-theme .owl-dots .owl-dot span::after {
-    content: "";
-    display: block;
-    width: 18px;
-    height: 18px;
-    border: 3px solid #000000;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    #home .owl-theme .owl-dots .owl-dot span::after {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 18px;
+        border: 3px solid #000000;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-/*================================= 
+/*=================================
        Abuot Section Styling
   =================================*/
 
 #about {
-    padding: 60px 0 0 0;
+    padding: 90px 0 0 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.small-circle {
+    width: 494px;
+    height: 494px;
+    opacity: 0.2;
+    position: absolute;
+    top: -218px;
+    left: -29%;
+    border-radius: 50%;
+    border: 48px solid rgb(57, 43, 241);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.big-circle {
+    width: 666px;
+    height: 580px;
+    position: absolute;
+    right: -25%;
+    top: -30%;
+    border-radius: 50%;
+    background-color: rgb(236, 236, 236);
+}
+
 
 .who-text {
     font-size: 20px;
@@ -291,9 +315,14 @@ html, body {
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-/*================================= 
+/*=================================
        Service Section Styling
   =================================*/
+.service-bg-banner {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .service-card {
     text-align: center;
@@ -348,44 +377,16 @@ html, body {
     font-family: 'JosefSansMedium';
 }
 
-.flaticon-hair-dryer:before {
-    content: "\f107";
-    margin-left: 0;
+#services [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
     font-size: 42px;
-    color: #fff;
-}
-
-.flaticon-beard:before {
-    content: "\f106";
-    margin-left: 0;
-    font-size: 42px;
-    color: #fff;
-}
-
-.flaticon-hair:before {
-    content: "\f108";
-    margin-left: 0;
-    font-size: 42px;
-    color: #fff;
-}
-
-.flaticon-jacket:before {
-    content: "\f109";
-    margin-left: 0;
-    font-size: 42px;
-    color: #fff;
-}
-
-.flaticon-waist:before {
-    content: "\f10a";
-    margin-left: 0;
-    font-size: 42px;
-    color: #fff;
-    line-height: 50px;
+    font-style: normal;
+    margin-left: 0px;
+    color: #ffffff;
 }
 
 .flaticon-bow:before {
-    content: "\f10b";
+    content: "\f103";
     margin-left: 0;
     font-size: 42px;
     color: #fff;
@@ -399,9 +400,9 @@ html, body {
     font-family: 'Vidaloka', serif;
 }
 
-.read-text:hover {
-    color: #392bf1;
-}
+    .read-text:hover {
+        color: #392bf1;
+    }
 
 .btn-load {
     width: 200px;
@@ -420,6 +421,12 @@ html, body {
 
 .gallery-img-border {
     border: 2px solid #d6d6d6;
+}
+
+.gallery-banner {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .no-display {
@@ -460,16 +467,13 @@ html, body {
     border-radius: 0;
 }
 
-#blog .flaticon-last-track-left-arrow:before {
-    content: "\f101";
-    margin-left: 0;
-    color: #ffffff;
-}
-
-#blog .flaticon-right-arrow:before {
-    content: "\f100";
-    margin-left: 0;
-    color: #ffffff;
+#blog [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: 20px;
+    font-style: normal;
+    margin-left: 0px;
+    color: #fff;
+    font-weight: 900;
 }
 
 #blog .img-border {
@@ -503,7 +507,7 @@ html, body {
     display: none;
 }
 
-/*================================= 
+/*=================================
       Contact Section Styling
   =================================*/
 
@@ -585,25 +589,49 @@ html, body {
     color: #000000;
 }
 
-.e-link:hover {
-    text-decoration: none;
-    color: #000000;
+    .e-link:hover {
+        text-decoration: none;
+        color: #000000;
+    }
+
+
+.info-card:hover .contact-info {
+    color: #3224ec;
+}
+
+    .info-card:hover .contact-info a {
+        color: #3224ec;
+    }
+
+.info-card:hover .flaticon-phone-call:before {
+    color: #3224ec;
+    content: "\f107";
+}
+
+.info-card:hover .flaticon-mail-send:before {
+    content: "\f108";
+    color: #3224ec;
+}
+
+.info-card:hover .flaticon-map:before {
+    content: "\f109";
+    color: #3224ec;
 }
 
 #contact .flaticon-phone-call:before {
-    content: "\f10c";
+    content: "\f107";
     margin-left: 0;
     font-size: 44px;
 }
 
 #contact .flaticon-mail-send:before {
-    content: "\f10d";
+    content: "\f108";
     margin-left: 0;
     font-size: 44px;
 }
 
 #contact .flaticon-map:before {
-    content: "\f10e";
+    content: "\f109";
     margin-left: 0;
     font-size: 44px;
 }
@@ -620,7 +648,7 @@ html, body {
     font-family: 'JosefSansBlack';
 }
 
-/*================================= 
+/*=================================
           Read More Styling
   =================================*/
 
@@ -1204,10 +1232,10 @@ html, body {
     color: #999999;
 }
 
-.email-style:hover {
-    text-decoration: none;
-    color: #999999;
-}
+    .email-style:hover {
+        text-decoration: none;
+        color: #999999;
+    }
 
 button:focus {
     outline: none;
@@ -1255,31 +1283,31 @@ button:focus {
     overflow: auto;
 }
 
-/* width */
+    /* width */
 
-#about .comments-space::-webkit-scrollbar {
-    width: 5px;
-}
+    #about .comments-space::-webkit-scrollbar {
+        width: 5px;
+    }
 
-/* Track */
+    /* Track */
 
-#about .comments-space::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #392bf1;
-    border-radius: 20px;
-}
+    #about .comments-space::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #392bf1;
+        border-radius: 20px;
+    }
 
-/* Handle */
+    /* Handle */
 
-#about .comments-space::-webkit-scrollbar-thumb {
-    background: #392bf1;
-    border-radius: 20px;
-}
+    #about .comments-space::-webkit-scrollbar-thumb {
+        background: #392bf1;
+        border-radius: 20px;
+    }
 
-/* Handle on hover */
+        /* Handle on hover */
 
-#about .comments-space::-webkit-scrollbar-thumb:hover {
-    background: #392bf1;
-}
+        #about .comments-space::-webkit-scrollbar-thumb:hover {
+            background: #392bf1;
+        }
 
 /*------ Scrolling Css --------*/
 
@@ -1288,31 +1316,31 @@ button:focus {
     overflow: auto;
 }
 
-/* width */
+    /* width */
 
-#services .comments-spaces::-webkit-scrollbar {
-    width: 5px;
-}
+    #services .comments-spaces::-webkit-scrollbar {
+        width: 5px;
+    }
 
-/* Track */
+    /* Track */
 
-#services .comments-spaces::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #392bf1;
-    border-radius: 20px;
-}
+    #services .comments-spaces::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #392bf1;
+        border-radius: 20px;
+    }
 
-/* Handle */
+    /* Handle */
 
-#services .comments-spaces::-webkit-scrollbar-thumb {
-    background: #392bf1;
-    border-radius: 20px;
-}
+    #services .comments-spaces::-webkit-scrollbar-thumb {
+        background: #392bf1;
+        border-radius: 20px;
+    }
 
-/* Handle on hover */
+        /* Handle on hover */
 
-#services .comments-spaces::-webkit-scrollbar-thumb:hover {
-    background: #392bf1;
-}
+        #services .comments-spaces::-webkit-scrollbar-thumb:hover {
+            background: #392bf1;
+        }
 
 /*---------------------------*/
 
@@ -1323,200 +1351,267 @@ button:focus {
     overflow: auto;
 }
 
-/* width */
+    /* width */
 
-#blog .comments-spacess::-webkit-scrollbar {
-    width: 5px;
-}
+    #blog .comments-spacess::-webkit-scrollbar {
+        width: 5px;
+    }
 
-/* Track */
+    /* Track */
 
-#blog .comments-spacess::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #392bf1;
-    border-radius: 20px;
-}
+    #blog .comments-spacess::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #392bf1;
+        border-radius: 20px;
+    }
 
-/* Handle */
+    /* Handle */
 
-#blog .comments-spacess::-webkit-scrollbar-thumb {
-    background: #392bf1;
-    border-radius: 20px;
-}
+    #blog .comments-spacess::-webkit-scrollbar-thumb {
+        background: #392bf1;
+        border-radius: 20px;
+    }
 
-/* Handle on hover */
+        /* Handle on hover */
 
-#blog .comments-spacess::-webkit-scrollbar-thumb:hover {
-    background: #392bf1;
-}
+        #blog .comments-spacess::-webkit-scrollbar-thumb:hover {
+            background: #392bf1;
+        }
 
 /*================ Media Query ===============*/
 
-@media screen and (max-width: 1500px) {}
+@media screen and (max-width: 1500px) {
+}
 
-@media screen and (max-width: 1366px) {}
+@media screen and (max-width: 1366px) {
+}
 
 @media screen and (max-width: 1024px) {
     #about .comments-space {
         height: 472px;
     }
+
     .img-outer-circle {
         width: 380px;
         height: 378px;
     }
+
     .media-align {
         align-items: center;
     }
+
     .about-text {
         font-size: 30px;
     }
+
     .who-text {
         font-size: 18px;
     }
+
     .service-heading {
         font-size: 22px;
     }
+
     #services .comments-spaces {
         height: 237px;
     }
+
     .service-card-desc {
         font-size: 16px;
     }
+
     .btn-schdeule {
         width: 200px;
         height: 65px;
         font-size: 20px;
         line-height: 54px;
     }
+
     .qoute-text {
         font-size: 32px;
     }
+
     #blog .comments-spacess {
         height: 408px;
     }
+
     .card-text {
         font-size: 21px;
     }
+
     .date-text {
         font-size: 18px;
     }
+
     .about-text {
         font-size: 30px;
     }
+
     .who-text {
         font-size: 18px;
     }
+
     .connect-text {
         font-size: 30px;
     }
+
     .info-card {
         padding: 43px 19px;
     }
+
     .input-field {
         height: 65px;
     }
+
     .contact-info {
         font-size: 18px;
     }
+
     #contact .flaticon-phone-call:before {
         font-size: 36px;
     }
+
     .btn-read-more {
         width: 149px;
         height: 55px;
         font-size: 16px;
         line-height: 39px;
     }
+
     .footer-font {
         font-size: 18px;
     }
+
     #home .main-banner-text {
         font-size: 36px;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 993px) {
     #home .main-banner-text {
         font-size: 30px;
     }
+
     #home .main-banner-desc {
         font-size: 16px;
     }
+
     .btn-contact {
         font-size: 17px;
         width: 160px;
         height: 56px;
         line-height: 40px;
     }
+
     .btn-blog {
         font-size: 17px;
         width: 160px;
         height: 56px;
         line-height: 40px;
     }
+
+    .big-circle {
+        width: 508px;
+        height: 508px;
+        right: unset;
+        top: 46%;
+        left: 13%;
+    }
+
     #about .comments-space {
         height: 370px;
     }
+
     .img-outer-circle {
         margin-left: 21%;
     }
+
     .media-service-mt {
         margin-top: 50px;
     }
+
     #blog .comments-spacess {
         height: 280px;
     }
+
     .media-left {
         text-align: left;
     }
+
     .media-ml {
         margin-left: 1rem;
     }
+
     .contact-info {
         font-size: 20px;
     }
 }
 
-@media screen and (max-width: 800px) {}
+@media screen and (max-width: 800px) {
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     #home .main-banner-text {
         font-size: 30px;
     }
+
     #home .main-banner-desc {
         font-size: 16px;
     }
+
     .btn-contact {
         font-size: 17px;
         width: 160px;
         height: 56px;
         line-height: 40px;
     }
+
     .btn-blog {
         font-size: 17px;
         width: 160px;
         height: 56px;
         line-height: 40px;
     }
+
     #about .comments-space {
         height: 370px;
     }
+
     .img-outer-circle {
         margin-left: 21%;
     }
+
     .media-service-mt {
         margin-top: 50px;
     }
+
     #blog .comments-spacess {
         height: 280px;
     }
+
     .media-left {
         text-align: left;
     }
+
     .media-ml {
         margin-left: 1rem;
     }
+
     .contact-info {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    #about .big-circle {
+        display: none;
+    }
+
+    .service-bg-banner {
+        background-size: cover;
+    }
+
+    .gallery-banner {
+        background-size: cover;
     }
 }
 
@@ -1524,39 +1619,50 @@ button:focus {
     #home {
         margin-top: 84px;
     }
+
     .navbar {
         padding: 6px 13px 6px 13px;
     }
+
     #about .comments-space {
         height: 522px;
     }
+
     .about-desc {
         font-size: 16px;
     }
+
     .img-outer-circle {
         margin-left: 0;
     }
+
     #services .comments-spaces {
         height: 176px;
     }
+
     .media-text-qoute {
         text-align: center !important;
     }
+
     #blog .comments-spacess {
         height: 401px;
     }
+
     .card-text {
         font-size: 20px;
     }
+
     .qoute-text {
         font-size: 31px;
     }
+
     .connect-text {
         font-size: 24px;
     }
 }
 
-@media screen and (max-width: 411px) {}
+@media screen and (max-width: 411px) {
+}
 
 @media screen and (max-width: 376px) {
     .img-outer-circle {
@@ -1564,39 +1670,46 @@ button:focus {
         height: 331px;
         margin-left: 4px;
     }
+
     #blog .comments-spacess {
         height: 459px;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 361px) {
     #about .comments-space {
         height: 553px;
     }
+
     .btn-contact {
         font-size: 16px;
         width: 146px;
         height: 56px;
         line-height: 40px;
     }
+
     .btn-blog {
         font-size: 16px;
         width: 146px;
         height: 56px;
         line-height: 40px;
     }
+
     #services .comments-spaces {
         height: 200px;
     }
+
     .qoute-text {
         font-size: 26px;
     }
+
     .btn-schdeule {
         width: 178px;
         height: 59px;
         font-size: 18px;
         line-height: 44px;
     }
+
     .card-text {
         font-size: 17px;
     }
@@ -1604,86 +1717,127 @@ button:focus {
 
 /*==================== Media Query For Land Scape Mode =====================*/
 
-@media screen and (max-width:1367px) and (orientation: landscape) {}
+@media screen and (max-width:1367px) and (orientation: landscape) {
+}
 
-@media screen and (max-width: 1280px) and (orientation: landscape) {}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+}
 
-@media screen and (max-width: 1024px) and (orientation: landscape) {}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+}
 
 @media screen and (max-width: 824px) and (orientation: landscape) {
     .navbar {
         padding: 6px 0 3px 0;
     }
+
+    .big-circle {
+        left: 15%;
+    }
+
     #home {
         margin-top: 86px;
     }
+
     .btn-contact {
         font-size: 14px;
         width: 165px;
         height: 50px;
         line-height: 35px;
     }
+
     .btn-blog {
         font-size: 14px;
         width: 165px;
         height: 50px;
         line-height: 35px;
     }
+
     #about .comments-space {
         height: 360px;
     }
+
     .img-outer-circle {
         width: 380px;
         height: 378px;
         margin-left: 23%;
     }
+
     .media-service-mt {
         margin-top: 40px;
     }
+
     .qoute-text {
         font-size: 25px;
     }
+
     #blog .comments-spacess {
         height: 284px;
     }
+
     .card-text {
         font-size: 18px;
     }
 }
 
-@media screen and (max-width: 812px) and (orientation: landscape) {}
+@media screen and (max-width: 812px) and (orientation: landscape) {
+}
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
     #home .main-banner-text {
         font-size: 32px;
     }
+
     #about .comments-space {
         height: 434px;
     }
+
     .img-outer-circle {
         width: 380px;
         height: 378px;
         margin-left: 13%;
     }
+
     #services .comments-spaces {
         height: 154px;
     }
+
+    .big-circle {
+        width: 408px;
+        height: 408px;
+        right: unset;
+        top: 56%;
+        left: 12.5%;
+    }
+
+    .media-text-qoute {
+        text-align: center !important;
+    }
+
     .about-desc {
         font-size: 16px;
     }
+
+    #blog .comments-spacess {
+        height: 346px;
+    }
 }
 
-@media screen and (max-width: 736px) and (orientation: landscape) {}
+@media screen and (max-width: 736px) and (orientation: landscape) {
+}
 
-@media screen and (max-width: 731px) and (orientation: landscape) {}
+@media screen and (max-width: 731px) and (orientation: landscape) {
+}
 
 @media screen and (max-width: 668px) and (orientation: landscape) {
     #blog .comments-spacess {
         height: 348px;
     }
+
     #about .comments-space {
         height: 396px;
     }
 }
 
-@media screen and (max-width: 641px) and (orientation: landscape) {}
+@media screen and (max-width: 641px) and (orientation: landscape) {
+}
