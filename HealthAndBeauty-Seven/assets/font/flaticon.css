@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 18/06/2019 10:19
+  	Creation date: 23/08/2019 06:06
   	*/
 
 @font-face {
@@ -30,20 +30,13 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-right-arrow:before { content: "\f100"; }
-.flaticon-last-track-left-arrow:before { content: "\f101"; }
-.flaticon-makeup:before { content: "\f102"; }
-.flaticon-phone-call:before { content: "\f103"; }
-.flaticon-mail-send:before { content: "\f104"; }
-.flaticon-map:before { content: "\f105"; }
-.flaticon-makeup-1:before { content: "\f106"; }
-.flaticon-manager:before { content: "\f107"; }
-.flaticon-email-filled-closed-envelope:before { content: "\f108"; }
-.flaticon-phone-receiver:before { content: "\f109"; }
-.flaticon-pin:before { content: "\f10a"; }
-.flaticon-signing-the-contract:before { content: "\f10b"; }
-.flaticon-send-button:before { content: "\f10c"; }
-.flaticon-placeholder:before { content: "\f10d"; }
-.flaticon-language:before { content: "\f10e"; }
-.flaticon-e-mail-envelope:before { content: "\f10f"; }
-.flaticon-smartphone:before { content: "\f110"; }
+.flaticon-beard:before { content: "\f100"; }
+.flaticon-hairdryer:before { content: "\f101"; }
+.flaticon-oxford-wave-blazer:before { content: "\f102"; }
+.flaticon-bow:before { content: "\f103"; }
+.flaticon-female-hair:before { content: "\f104"; }
+.flaticon-keyboard-right-arrow-button:before { content: "\f105"; }
+.flaticon-left-arrow-key:before { content: "\f106"; }
+.flaticon-phone-call:before { content: "\f107"; }
+.flaticon-mail-send:before { content: "\f108"; }
+.flaticon-map:before { content: "\f109"; }
